@@ -1,0 +1,48 @@
+#########################################
+# Syntax Coloring Map For MatrixOrbitali2c
+#########################################
+
+#########################################
+# Datatypes (KEYWORD1)
+#########################################
+
+MatrixOrbitali2c	KEYWORD1
+
+#########################################
+# Methods and Functions (KEYWORD2)
+#########################################
+
+begin	KEYWORD2
+clear	KEYWORD2
+home	KEYWORD2
+print	KEYWORD2
+setCursor	KEYWORD2
+cursor	KEYWORD2
+noCursor	KEYWORD2
+blink	KEYWORD2
+noBlink	KEYWORD2
+display	KEYWORD2
+noDisplay	KEYWORD2
+autoscroll	KEYWORD2
+noAutoscroll	KEYWORD2
+createChar	KEYWORD2
+lineWrap	KEYWORD2
+noLineWrap	KEYWORD2
+cursorLeft	KEYWORD2
+cursorRight	KEYWORD2
+setContrast	KEYWORD2
+gpioOff	KEYWORD2
+gpioOn	KEYWORD2
+backLightOff	KEYWORD2
+backLightOn	KEYWORD2
+initNarrowVertical	KEYWORD2
+initWideVertical	KEYWORD2
+initHorizontal	KEYWORD2
+initLargeDigits	KEYWORD2
+drawVertical	KEYWORD2
+drawHorizontal	KEYWORD2
+placeLargeDigit	KEYWORD2
+
+#########################################
+# Constants (LITERAL1)
+#########################################
