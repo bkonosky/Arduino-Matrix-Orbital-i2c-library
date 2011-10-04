@@ -212,6 +212,14 @@ void MatrixOrbitali2c::createChar(uint8_t location, uint8_t charmap[])
  }
 }
 
+void MatrixOrbitali2c::setCursor(uint8_t h, uint8_t v)
+{
+ write(MO_COMMANDCHAR);
+ write(MO_SETCURSORPOS);
+ write(h);
+ write(v);
+}
+
 
 // Mid level commands for sending data to the display
 
@@ -237,7 +245,7 @@ void MatrixOrbitali2c::write(const uint8_t *buffer, size_t size)
     Wire.send(*buffer++);
   Wire.endTransmission();
 }
-
+/*
 void MatrixOrbitali2c::print(const String &s)
 {
   Wire.beginTransmission(_i2cport);
@@ -246,7 +254,7 @@ void MatrixOrbitali2c::print(const String &s)
   }
   Wire.endTransmission();
 }
-  
+*/  
 
 
 
