@@ -6,7 +6,7 @@
 */  
 
 #include <MatrixOrbitali2c.h>
-#include "WProgram.h"
+#include "Arduino.h"
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>
@@ -223,21 +223,21 @@ void MatrixOrbitali2c::setCursor(uint8_t h, uint8_t v)
 
 // Mid level commands for sending data to the display
 
-inline void MatrixOrbitali2c::write(uint8_t value)
+inline size_t MatrixOrbitali2c::write(uint8_t value)
 {
   Wire.beginTransmission(_i2cport);
-  Wire.send(value);
+  Wire.write(value);
   Wire.endTransmission();
 }
 
-void MatrixOrbitali2c::write(const char *str)
+size_t MatrixOrbitali2c::write(const char *str)
 {
   Wire.beginTransmission(_i2cport);
   while (*str)
-     Wire.send(*str++);
+     Wire.write(*str++);
   Wire.endTransmission();
 }
-
+/*
 void MatrixOrbitali2c::write(const uint8_t *buffer, size_t size)
 {
   Wire.beginTransmission(_i2cport);
@@ -245,6 +245,7 @@ void MatrixOrbitali2c::write(const uint8_t *buffer, size_t size)
     Wire.send(*buffer++);
   Wire.endTransmission();
 }
+*/
 /*
 void MatrixOrbitali2c::print(const String &s)
 {

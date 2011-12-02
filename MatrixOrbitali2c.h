@@ -10,7 +10,7 @@
 
 #include <inttypes.h>
 #include "Print.h"
-#include "WProgram.h"
+#include "Arduino.h"
 #include <Wire.h>
 
 // Command character
@@ -94,9 +94,9 @@ public:
 
   void createChar(uint8_t, uint8_t[]);
   void setCursor(uint8_t, uint8_t); 
-  virtual void write(uint8_t);
-  virtual void write(const char *str);
-  virtual void write(const uint8_t *buffer, size_t size);
+  virtual size_t write(uint8_t);
+  virtual size_t write(const char *str);
+//  virtual void write(const uint8_t *buffer, size_t size);
 //  void print(const String &);
 
 private:
