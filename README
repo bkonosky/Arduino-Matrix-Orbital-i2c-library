@@ -1,7 +1,7 @@
 This is a library for the Matrix Orbital LCD2041 for Arduino.
 
 I've written and tested the library for the LCD2041 V1.50 firmware.
-I do not know if it will work on later displays, nor any of the other sizes 
+I do not know if it will work on later displays, nor any of the other sizes
 since I don't own any other displays.
 
 I got all my info on the display from here: http://www.matrixorbital.ca/manuals/LCDVFD_Series/LCD2041
@@ -11,3 +11,4 @@ will get to converting it over to 1.0 hopefully before it is released.
 
 Changelog
 v0.5 First public release.
+V1.0 Updates to Arduio 1.0+ Wire library
