@@ -1,9 +1,9 @@
-/* 
+/*
   MatrixOrbitali2c.cpp - Library for accessing the Matrix Orbital LCD 2041 v1.50 over i2c
   Created by Benjamin Konosky, Created 9/6/11
   Released into the Public Domain.
-  Version 0.5 - For the Arduino pre 1.0 Wire library.
-*/  
+  Version 1.0 - For the Arduino pre 1.0 Wire library.
+*/
 
 #include <MatrixOrbitali2c.h>
 #include "Arduino.h"
@@ -38,7 +38,7 @@ void MatrixOrbitali2c::init(uint8_t i2cport)
 
 void MatrixOrbitali2c::begin(uint8_t rows, uint8_t cols)
 {
-  Wire.begin();	
+  Wire.begin();
   clear();
   noBlink();
   noCursor();
@@ -194,7 +194,7 @@ void MatrixOrbitali2c::backlightOn(uint8_t ontime)
   write(MO_BACKLIGHTON);
   write(ontime);
 }
- 
+
 void MatrixOrbitali2c::setContrast(uint8_t contrast)
 {
   write(MO_COMMANDCHAR);
@@ -255,9 +255,4 @@ void MatrixOrbitali2c::print(const String &s)
   }
   Wire.endTransmission();
 }
-*/  
-
-
-
-
-
+*/
